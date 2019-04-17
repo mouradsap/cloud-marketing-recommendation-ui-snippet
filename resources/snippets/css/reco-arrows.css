@@ -5,7 +5,7 @@ color:inherit;
 width:24px;
 height:24px;
 background:
-       url('arrows/left.png')
+       url('../arrows/left.png')
          no-repeat;
 content:none !important;
 }
@@ -16,7 +16,7 @@ color:inherit;
 width:24px;
 height:24px;
 background:
-       url('arrows/right.png')
+       url('../arrows/right.png')
          no-repeat;
 content:none !important;
 }
@@ -24,7 +24,7 @@ content:none !important;
 .custom-slick-btn .slick-prev:before {
 width: 24px;
 height: 24px; 
-background: url('arrows/left.png')
+background: url('../arrows/left.png')
               no-repeat;
 left:0; 
 opacity:100;
@@ -34,7 +34,7 @@ content: none !important;
 .custom-slick-btn .slick-next:before {
 width: 24px;
 height: 24px;
-background: url('arrows/right.png')
+background: url('../arrows/right.png')
               no-repeat;;
 right:0;
 opacity:100;

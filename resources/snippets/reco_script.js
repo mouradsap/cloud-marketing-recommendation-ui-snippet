@@ -174,9 +174,9 @@ document.addEventListener('DOMContentLoaded', function () {
     		var productIds = productsOrigins[productOrigin].join();
     		var serviceURL = params['data-server'] +
     			"/api/API_MKT_RECOMMENDATION_SRV/GetProducts?" +
-    			addURLParam("productIds", formatWith("'", productIds)) +
-    			addURLParam("productOrigin", formatWith("'", productOrigin)) +
-    			addURLParam("language", formatWith("'", params['data-language'])) +
+    			addURLParam("ProductIds", formatWith("'", productIds)) +
+    			addURLParam("ProductOrigin", formatWith("'", productOrigin)) +
+    			addURLParam("Language", formatWith("'", params['data-language'])) +
     			addURLParam("_L54AD1F204_", formatWith("'", params['data-l54'])) + 
     			addURLParam("_K13_", formatWith("", params['data-k13'])) + 
     			addURLParam("_V_", formatWith("", params['data-v'])) + 
