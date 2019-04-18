@@ -10,7 +10,7 @@
  * <div data-carouselId="myCarouselID" (required) data-orientation="" (vertical /
  * horizontal) data-fontColor="" #XXXXXX data-userId="" data-userType=""
  * data-leadingItemIds="" data-leadingItemType="" data-basketItemIds=""
- * data-basketItemType="" data-context="" data-useProductURL="" data-server=""
+ * data-basketItemType="" data-context="" data-server=""
  * (required) data-language="" (EN / FR / ...) data-h="" (SALT) data-l54=""
  * (recocache) data-k13="" (recocache) data-v="" (recocache) data-k14=""
  * (recocache) > </div>
@@ -213,9 +213,9 @@ document.addEventListener('DOMContentLoaded', function () {
   		return dfd.promise();
 
 	     /**
-	      * Processes arguments to concatenate all products from requested
-	      * origins
-	      */
+			 * Processes arguments to concatenate all products from requested
+			 * origins
+			 */
   		function processFrom(info) {
   			var products = [];
   			for (var i = 0; i < info.length; i++) {
@@ -333,7 +333,7 @@ document.addEventListener('DOMContentLoaded', function () {
     		var $slickWindow = $carousel.find('.slick-list');
     		var $providedDiv = $carousel.parent().parent();
 
-    		//work around for vertical carousel's height
+    		// work around for vertical carousel's height
     		$carousel.on('setPosition', () => {
     			adjustCarouselVerticalHeight($slickWindow, $providedDiv);
     		})
