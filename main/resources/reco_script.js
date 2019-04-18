@@ -102,8 +102,8 @@ document.addEventListener('DOMContentLoaded', function () {
     		"https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css";
     	var pathToSlickThemeCSS =
     		"https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css";
-    	var pathToRecoCSS = resourcesUrl + "/snippets/css/reco-custom.css";
-    	var pathToRecoArrowsCSS = resourcesUrl + "/snippets/css/reco-arrows.css";
+    	var pathToRecoCSS = resourcesUrl + "/resources/css/reco-custom.css";
+    	var pathToRecoArrowsCSS = resourcesUrl + "/resources/css/reco-arrows.css";
 
     	return [
     		load.js(pathToSlickJS),
