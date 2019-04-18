@@ -16,12 +16,13 @@ With the help of the HTML code snippet, and mandatory parameters, the sample Jav
 
 ## Download and Installation
 
-1. Clone the repository to your local environment
-2. Use the html <script> tag inside the index.html to invoke the JavaScript file.
+1. Clone the repository to your local environment.
+2. Use the html tag <script> inside yout HTML page to include the JavaScript file reco_script.js. Refer to [snippet_example.html](https://github.com/SAP/cloud-marketing-recommendation-ui-snippet/blob/master/main/snippet_example.html)
 
 ## Configuration
 
-There is no required configuration for the snippet code. It is only required to pass the parameter values as per the html file example. As mentioned above, the prerequisite is to have active Recommendation Scenario available on the underlying SAP Marketing Cloud system. Please refer to the [SAP Marekting Cloud help documentation](https://help.sap.com/viewer/b88f770e4b7c4ecead5477e7a6c7b8f7/1902.500/en-US/f2b2a435679e4edbbc9821f967445a6a.html) for additional instructions.
+There is no required configuration for the snippet code. It is only required to pass the parameter values as per the html file example. As mentioned above, a prerequisite is to have an active Recommendation Scenario available on the underlying SAP Marketing Cloud system. Please refer to the [SAP Marekting Cloud help documentation](https://help.sap.com/viewer/b88f770e4b7c4ecead5477e7a6c7b8f7/1902.500/en-US/f2b2a435679e4edbbc9821f967445a6a.html) for additional instructions.
+This Recommendation Scenario will provide the values for some of the mandatory parameters (l54, k13, k14,v).
 
 
 ## How to obtain support
