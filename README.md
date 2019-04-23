@@ -4,7 +4,7 @@ Example of html/js/css snippet to integrate SAP Marketing Recommendation Cache o
 
 ## Description
 
-This code sample showcases the consumption of the [Marketing Recommendation Cache service] (https://api.sap.com/api/API_MKT_RECOMMENDATION_SRV/resource) into a carousel display of products that may be used on a commerce web shop. The recommendations are coming from SAP Marketing Cloud passing through a data buffer layer residing on SAP Cloud Platform.
+This code sample showcases the consumption of the ([Marketing Recommendation Cache service] (https://api.sap.com/api/API_MKT_RECOMMENDATION_SRV/resource)) into a carousel display of products that may be used on a commerce web shop. The recommendations are coming from SAP Marketing Cloud passing through a data buffer layer residing on SAP Cloud Platform.
 
 With the help of the HTML code snippet, and mandatory parameters, the sample JavaScript first makes a call to get recommendations, followed by another call to get the products master data. It then displays the result as a carousel using [slick-carousel](https://github.com/kenwheeler/slick).
 
