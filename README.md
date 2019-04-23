@@ -1,6 +1,6 @@
 # SAP Cloud Platform Snippet Recommendations
 
-Example of html/js/css snippet to integrate SAP Marketing Recommendation Cache on SAP Cloud Platform
+Sample of html/js/css snippet to integrate SAP Marketing Recommendation Cache on SAP Cloud Platform
 
 ## Description
 
