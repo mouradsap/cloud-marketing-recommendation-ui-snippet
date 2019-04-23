@@ -27,7 +27,8 @@ This Recommendation Scenario will provide the values for some of the mandatory p
 
 ## How to obtain support
 
-If you have issues with this sample, please open a report using [Github issues](issues).
+SAP does not offer support for the Sample Code.
+This Sample Code is provided as-is. 
 
 ## License
 Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved.
