@@ -1,12 +1,12 @@
 # SAP Cloud Platform Recommendations Snippet
 
-Sample of html/js/css snippet to integrate the SAP Marketing Recommendation Cache service on the SAP Cloud Platform
+Sample of html/js/css snippet to integrate the SAP Marketing Recommendation Cache service on the SAP Cloud Platform.
 
 ## Description
 
-This code sample enables the consumption of the [Marketing Recommendation Cache service](https://api.sap.com/api/API_MKT_RECOMMENDATION_SRV/resource) to display of products in a carousel that can be used by a commerce web shop. The recommendations come from SAP Marketing Cloud and pass through a data buffer layer that resides on the SAP Cloud Platform.
+This code sample enables the consumption of the [SAP Marketing Recommendation Cache service](https://api.sap.com/api/API_MKT_RECOMMENDATION_SRV/resource) to display of products in a carousel that can be used by a commerce web shop. The recommendations come from SAP Marketing Cloud and pass through a data buffer layer that resides on the SAP Cloud Platform.
 
-With the help of the HTML code snippet, and mandatory parameters, the sample JavaScript makes a call to get recommendations, followed by another call to get the associated product master data. The recommendations are then displaed within a carousel using [slick-carousel](https://github.com/kenwheeler/slick).
+With the help of the HTML code snippet, and mandatory parameters, the sample JavaScript makes a call to get recommendations, followed by another call to get the associated product master data. The recommendations are then displayed within a carousel using [slick-carousel](https://github.com/kenwheeler/slick).
 
 ## Requirements
 
@@ -17,7 +17,7 @@ With the help of the HTML code snippet, and mandatory parameters, the sample Jav
 ## Download and Installation
 
 1. Clone the repository to your local environment.
-2. Use the html tag <script> inside yout HTML page to include the JavaScript file reco_script.js. Refer to [snippet_example.html](https://github.com/SAP/cloud-marketing-recommendation-ui-snippet/blob/master/main/snippet_example.html)
+2. Use the html tag <script> inside your HTML page to include the JavaScript file reco_script.js. Refer to [snippet_example.html](https://github.com/SAP/cloud-marketing-recommendation-ui-snippet/blob/master/main/snippet_example.html)
 
 ## Configuration
 
