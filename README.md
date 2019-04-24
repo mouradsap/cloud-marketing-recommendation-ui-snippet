@@ -24,6 +24,9 @@ With the help of the HTML code snippet, and mandatory parameters, the sample Jav
 There is no configuration required for the code snippet. The only requirement is to pass the mandatory parameters as per the html file example. As mentioned above, a prerequisite is to have an active Recommendation Scenario available on the underlying SAP Marketing Cloud system. Please refer to the [SAP Marekting Cloud help documentation](https://help.sap.com/viewer/b88f770e4b7c4ecead5477e7a6c7b8f7/1902.500/en-US/f2b2a435679e4edbbc9821f967445a6a.html) for additional instructions.
 This Recommendation Scenario will provide the values for some of the mandatory parameters (l54, k13, k14,v).
 
+## Known Issues
+
+There are currently no known issues.
 
 ## How to obtain support
 
