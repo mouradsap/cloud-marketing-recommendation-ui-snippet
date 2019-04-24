@@ -1,17 +1,17 @@
-# SAP Cloud Platform Snippet Recommendations
+# SAP Cloud Platform Recommendations Snippet
 
-Sample of html/js/css snippet to integrate SAP Marketing Recommendation Cache on SAP Cloud Platform
+Sample of html/js/css snippet to integrate the SAP Marketing Recommendation Cache service on the SAP Cloud Platform
 
 ## Description
 
-This code sample showcases the consumption of the [Marketing Recommendation Cache service](https://api.sap.com/api/API_MKT_RECOMMENDATION_SRV/resource) into a carousel display of products that may be used on a commerce web shop. The recommendations are coming from SAP Marketing Cloud passing through a data buffer layer residing on SAP Cloud Platform.
+This code sample enables the consumption of the [Marketing Recommendation Cache service](https://api.sap.com/api/API_MKT_RECOMMENDATION_SRV/resource) to display of products in a carousel that can be used by a commerce web shop. The recommendations come from SAP Marketing Cloud and pass through a data buffer layer that resides on the SAP Cloud Platform.
 
-With the help of the HTML code snippet, and mandatory parameters, the sample JavaScript first makes a call to get recommendations, followed by another call to get the products master data. It then displays the recommendations as a carousel using [slick-carousel](https://github.com/kenwheeler/slick).
+With the help of the HTML code snippet, and mandatory parameters, the sample JavaScript makes a call to get recommendations, followed by another call to get the associated product master data. The recommendations are then displaed within a carousel using [slick-carousel](https://github.com/kenwheeler/slick).
 
 ## Requirements
 
 * An **SAP Marketing Cloud tenant** (SAP Marketing On-premise is not supported), and access to an **SAP Cloud Platform tenant**.
-* An available *recommendation scenario* configured through the SAP Marketing Cloud **Manage Recommendations** and **Recommendation Scenario** applications. ([Example](https://help.sap.com/viewer/b88f770e4b7c4ecead5477e7a6c7b8f7/1902.500/en-US/f2b2a435679e4edbbc9821f967445a6a.html)).
+* A *recommendation scenario* that has been configured using the SAP Marketing Cloud **Manage Recommendations** and **Recommendation Scenario** applications. ([Example](https://help.sap.com/viewer/b88f770e4b7c4ecead5477e7a6c7b8f7/1902.500/en-US/f2b2a435679e4edbbc9821f967445a6a.html)).
 * A local or remote web server to run HTML code snippet
 
 ## Download and Installation
@@ -21,8 +21,8 @@ With the help of the HTML code snippet, and mandatory parameters, the sample Jav
 
 ## Configuration
 
-There is no configuration required for the code snippet. The only requirement is to pass the mandatory parameters as per the html file example. As mentioned above, a prerequisite is to have an active Recommendation Scenario available on the underlying SAP Marketing Cloud system. Please refer to the [SAP Marekting Cloud help documentation](https://help.sap.com/viewer/b88f770e4b7c4ecead5477e7a6c7b8f7/1902.500/en-US/f2b2a435679e4edbbc9821f967445a6a.html) for additional instructions.
-This Recommendation Scenario will provide the values for some of the mandatory parameters (l54, k13, k14,v).
+There is no configuration required for the code snippet. The only requirement is to pass the mandatory parameters. As mentioned above,  an active recommendation scenario is required from the underlying SAP Marketing Cloud system. Please refer to the [SAP Marketing Cloud application help](https://help.sap.com/viewer/b88f770e4b7c4ecead5477e7a6c7b8f7/1902.500/en-US/f2b2a435679e4edbbc9821f967445a6a.html) for additional instructions.
+The recommendation scenario provides the values for some of the mandatory parameters (l54, k13, k14,v).
 
 ## Known Issues
 
