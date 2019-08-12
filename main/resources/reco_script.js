@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function loadSlickLib($carouselDivs) {
     	var params = $carouselDivs.eq(0).data("params");
-    	var resourcesUrl = params["data-server"] + "/resources";
+    	var resourcesUrl = "./";
 
     	var pathToSlickJS =
     		"https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js";
@@ -102,8 +102,8 @@ document.addEventListener('DOMContentLoaded', function () {
     		"https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css";
     	var pathToSlickThemeCSS =
     		"https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css";
-    	var pathToRecoCSS = resourcesUrl + "/resources/css/reco-custom.css";
-    	var pathToRecoArrowsCSS = resourcesUrl + "/resources/css/reco-arrows.css";
+    	var pathToRecoCSS = resourcesUrl + "resources/css/reco-custom.css";
+    	var pathToRecoArrowsCSS = resourcesUrl + "resources/css/reco-arrows.css";
 
     	return [
     		load.js(pathToSlickJS),
@@ -129,12 +129,12 @@ document.addEventListener('DOMContentLoaded', function () {
     function getRecommendations(params) {
     	var serviceURL = params['data-server'] +
         	"/api/API_MKT_RECOMMENDATION_SRV/GetRecommendations?" +
-        	addURLParam("userType", formatWith("'", params['data-usertype'])) +
-        	addURLParam("leadingItemIds", formatWith("'", params['data-leadingitemids'])) +
-        	addURLParam("leadingItemType", formatWith("'", params['data-leadingitemtype'])) + 
-        	addURLParam("basketItemIds", formatWith("'", params['data-basketitemids'])) + 
-        	addURLParam("basketItemType", formatWith("'", params['data-basketitemtype'])) +
-        	addURLParam("contextParameters", formatWith("'", params['data-context'])) + 
+        	addURLParam("UserType", formatWith("'", params['data-usertype'])) +
+        	addURLParam("LeadingItemIds", formatWith("'", params['data-leadingitemids'])) +
+        	addURLParam("LeadingItemType", formatWith("'", params['data-leadingitemtype'])) + 
+        	addURLParam("BasketItemIds", formatWith("'", params['data-basketitemids'])) + 
+        	addURLParam("BasketItemType", formatWith("'", params['data-basketitemtype'])) +
+        	addURLParam("ContextParameters", formatWith("'", params['data-context'])) + 
         	addURLParam("_L54AD1F204_", formatWith("'", params['data-l54'])) + 
         	addURLParam("_K13_", formatWith("", params['data-k13'])) + 
         	addURLParam("_V_", formatWith("", params['data-v'])) + 
@@ -208,7 +208,7 @@ document.addEventListener('DOMContentLoaded', function () {
     			imageUrls[products[i].ProductImageUrl] = i;
 
     	var imagesToPreload =  Object.keys(imageUrls).map(x => load.img(x))
-   		var dfd = $.Deferred();
+		var dfd = $.Deferred();
    		Promise.all( imagesToPreload ).then(() => {dfd.resolve(products);});
   		return dfd.promise();
 
@@ -223,7 +223,7 @@ document.addEventListener('DOMContentLoaded', function () {
   				if (typeof response != "undefined")
   					products = products.concat(response.results)
   			}
-  			return {toProducts : products}
+  			return {toProducts : products.filter(x => { return x.ProductImageUrl !== ""; })}
   		}
     }
 
