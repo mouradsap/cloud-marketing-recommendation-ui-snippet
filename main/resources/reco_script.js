@@ -246,7 +246,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	
 	        $carousel.append($("<div>")
 	                  .append($("<div>", {"class" : itemContainerClasses.join(" ")})
-	                  .append($("<a>", {"target":"_top", "href":"https://"+productTargetUrl})
+	                  .append($("<a>", {"target":"_top", "href":productTargetUrl})
 	                  .append($("<div>", {"class" :itemThumbnailContainerClasses.join(" ")})
 	                    .append($("<img>", {"class" : "thumbnail-product",
 	                        "src" : productImageUrl}))))
