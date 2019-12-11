@@ -123,9 +123,19 @@ document.addEventListener('DOMContentLoaded', function () {
     		.then( setData.bind(null, $(this)) );
     	});
     }
+    
+    //Force https in all requests to avoid browser redirects
+    function setHttpsInURL(serverURL){    	
+    	var serverURLHttps = serverURL
+    	if(serverURL.startsWith("http://")){
+    		var serverURLHttps = serverURL.replace("http","https");    	  	
+    	}
+    	return serverURLHttps;
+    }
+    
 
     function getRecommendations(params) {
-    	var serviceURL = params['data-server'] +
+    	var serviceURL = setHttpsInURL(params['data-server']) +
         	"/api/API_MKT_RECOMMENDATION_SRV/GetRecommendations?" +
         	addURLParam("UserType", formatWith("'", params['data-usertype'])) +
         	addURLParam("LeadingItemIds", formatWith("'", params['data-leadingitemids'])) +
@@ -170,7 +180,7 @@ document.addEventListener('DOMContentLoaded', function () {
     	var requests = [];
     	for (var productOrigin in productsOrigins) {
     		var productIds = productsOrigins[productOrigin].join();
-    		var serviceURL = params['data-server'] +
+    		var serviceURL = setHttpsInURL(params['data-server']) +
     			"/api/API_MKT_RECOMMENDATION_SRV/GetProducts?" +
     			addURLParam("ProductIds", formatWith("'", productIds)) +
     			addURLParam("ProductOrigin", formatWith("'", productOrigin)) +
