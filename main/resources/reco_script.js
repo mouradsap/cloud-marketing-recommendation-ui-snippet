@@ -184,10 +184,6 @@ document.addEventListener('DOMContentLoaded', function () {
     					type: "GET",
     					dataType: "json",
     					crossDomain: true,
-    					headers: {
-    						'_u_': params['data-userid'],
-    						'_h_': params['data-h']
-    					},
     					async: true,
     					url: serviceURL,
     					error: function() { console.log("ERROR: getProduct call") },
