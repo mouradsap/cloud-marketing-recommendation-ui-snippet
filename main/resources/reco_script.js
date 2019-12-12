@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function setHttpsInURL(serverURL){    	
     	var serverURLHttps = serverURL
     	if(serverURL.startsWith("http://")){
-    		var serverURLHttps = serverURL.replace("http","https");    	  	
+    		serverURLHttps = serverURL.replace("http","https");    	  	
     	}
     	return serverURLHttps;
     }
